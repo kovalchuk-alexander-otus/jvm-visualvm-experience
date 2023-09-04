@@ -21,12 +21,12 @@ public class JvmExperience {
         Thread.sleep(3_000);
 
         System.out.println(LocalTime.now() + ": now see heap");
-        List<SimpleObject> simpleObjects = createSimpleObjects(5_000_000);
-        Thread.sleep(3_000);
-        simpleObjects.addAll(createSimpleObjects(5_000_000));
-        Thread.sleep(3_000);
-        simpleObjects.addAll(createSimpleObjects(5_000_000));
-        Thread.sleep(3_000);
+        List<SimpleObject> simpleObjects = createSimpleObjects(7_000_000);
+        Thread.sleep(6_000);
+        simpleObjects.addAll(createSimpleObjects(7_000_000));
+        Thread.sleep(6_000);
+        simpleObjects.addAll(createSimpleObjects(7_000_000));
+        Thread.sleep(6_000);
     }
 
     static void loadToMetaspaceAllFrom(String packageName) {
